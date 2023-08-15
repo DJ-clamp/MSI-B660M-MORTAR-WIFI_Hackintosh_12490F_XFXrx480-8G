@@ -1,6 +1,6 @@
 # [👀️] 安装引导前的注意事项
 
-我当前的BIOS版本是```7D43v17```在经历了卡在```EB|LOG:EXITBS:START```的无数次试验后发现只有当把 Booter -> Quirks -> SetupVirtualMap 设置为 true 时启动通过
+我当前的BIOS版本是```7D43v17``` (PS.更新过了最新的BIOS `7D43v1D`后依然可用 )在经历了卡在```EB|LOG:EXITBS:START```的无数次试验后发现只有当把 Booter -> Quirks -> SetupVirtualMap 设置为 true 时启动通过
 更多信息请查阅这篇[`issue贴文`](https://github.com/laggykiller/Hackintosh_MSI_B660M-A_WIFI_DDR4/issues/1#issuecomment-1251633487)
 
 Notice：
