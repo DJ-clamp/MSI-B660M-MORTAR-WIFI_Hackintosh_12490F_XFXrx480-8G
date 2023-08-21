@@ -25,7 +25,7 @@ CPU 12490F在使用了[`CPUFriend`](https://github.com/acidanthera/CPUFriend) ke
 | OC版本 | 0.9.3 |
 | macOS | macOS Ventura 13.2.1 (22D68) |
 | 机型 | MacPro7,1 |
-| BIOS | 7D43v17 |
+| BIOS | 7D43v1D |
 
 # [💻] 设置
 | 选项 | 状态 |
