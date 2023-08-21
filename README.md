@@ -52,6 +52,16 @@ ref. MSI website. D.T.M 是叫做 disable title message 的东西 开启这项�
 * USB我自己生成的有问题，发现的状况是前面板只有USB2.0设备可以使用，TYPE-C和3.0均无法加载，后面板USB3.0一切正常
 看说明是需要对USB设备进行Mapping，具体的使用可以看[`这篇文章`](https://github.com/yzchan/MSI-MAG-B660M-MORTAR-DDR4-12600K-EFI/blob/master/USB%E5%AE%9A%E5%88%B6.md)
 
+2023-08-16
+尝试去修复SMBUS的问题，采用了SSDT-SBUS-MCHC.dsl opencore文档的方式进行修复，在查询到PCI驱动的同时发现以下问题。
+```txt
+kextstat | grep -E "AppleSMBusController|AppleSMBusPCI"
+Executing: /usr/bin/kmutil showloaded
+No variant specified, falling back to release
+  155    0 0xffffff7f95df9000 0x1000     0x1000     com.apple.driver.AppleSMBusPCI (1.0.14d1) 3B3CBC6F-07BD-3D7E-9F2F-D738A31C290D <17 7 6 3>
+  178    1 0xffffff7f95ded000 0x6ffd     0x6ffd     com.apple.driver.AppleSMBusController (1.0.18d1) 18305D5D-1310-37BC-B654-6C034FD346E7 <177 17 16 7 6 3>
+```
+这个`No variant specified, falling back to release`，我
 
 # [🎨] TODO 接下来的准备
 
@@ -68,6 +78,6 @@ Intel(R) USB 3.20 可扩展主机控制器 - 1.20 (Microsoft) | USB 3.0 (XHCI) |
 软件方面有一个现成的方案[OpenRGB](https://openrgb.org/) 支持三大主流平台
 
 ## 2. 主板功能
-* 睡眠 唤醒
+* 睡眠 唤醒 成功
 * 节能四项 `目前只实现了三项`
-* 长按关机出现电源选项
+* 长按关机出现电源选项 未实现
