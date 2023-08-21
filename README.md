@@ -22,7 +22,7 @@ CPU 12490F在使用了[`CPUFriend`](https://github.com/acidanthera/CPUFriend) ke
 | 内存 | ADATA 威刚 XPG D35G 灯条 DDR4 3200 16Gx2 |
 | 网卡 | Realtek® 8125BG 2.5G LAN + Intel® Wi-Fi 6E AX211 |
 | 硬盘 | 长江储存芯片方案的 2T M.2 PCIE4.0 |
-| OC版本 | 0.9.3 |
+| OC版本 | 0.9.4 |
 | macOS | macOS Ventura 13.2.1 (22D68) |
 | 机型 | MacPro7,1 |
 | BIOS | 7D43v1D |
@@ -40,6 +40,9 @@ CPU 12490F在使用了[`CPUFriend`](https://github.com/acidanthera/CPUFriend) ke
 ref. MSI website. D.T.M 是叫做 disable title message 的东西 开启这项会自动把所有要屏蔽的信息显示出来，包括了fast boot disable，cfg-lock disable etc., 在开启保存时候会提示出来哪些发生了变更，哪里有具体的设置信息.
 
 # [📕] 更新记录
+2023-08-21
+
+* 更新open core到0.9.4-debug版本
 
 2023-08-14
 
